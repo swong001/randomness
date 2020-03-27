@@ -42,7 +42,7 @@ class qrwifi():
 if __name__ == '__main__':
     import argparse
 
-    parser = argparse.ArgumentParser(description='Process some integers.',formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser = argparse.ArgumentParser(description='Generate a printable QR code for sharing your wifi with friends.', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-s','--security', choices=['WEP', 'WPA'], help='Security Protocol', default='WPA')
     parser.add_argument('-i','--ssid',     type=str, help='SSID to join', default='foo')
     parser.add_argument('-p','--password', type=str, help='SSID Password', default='bar')
