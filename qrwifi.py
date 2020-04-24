@@ -5,6 +5,7 @@ try:
     import qrcode.image.svg
     import argparse
     import imgcat
+    from PIL import Image
 except ImportError as error:
     print(f"{error};\npip3 install {error.name} ")
     sys.exit()
